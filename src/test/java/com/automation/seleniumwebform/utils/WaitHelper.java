@@ -5,21 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 
-/**
- * Utility class to handle explicit waits for WebElements.
- */
 public class WaitHelper {
 
     private WebDriver driver;
     private WebDriverWait wait;
 
-    /**
-     * Constructor to initialize WebDriverWait with configured timeout.
-     * Defaults to 10 seconds if not set via properties.
-     */
     public WaitHelper(WebDriver driver) {
         this.driver = driver;
 

@@ -9,10 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
 
-/**
- * Abstract base class for initializing WebDriver based on config.
- * Applies implicit wait and maximizes the browser.
- */
+
 public abstract class BaseTest {
     protected static WebDriver driver;
 
@@ -53,7 +50,6 @@ public abstract class BaseTest {
         return driver;
     }
 
-    // ✅ New static accessor for WebFormSteps
     public static WebDriver getStaticDriver() {
         return driver;
     }

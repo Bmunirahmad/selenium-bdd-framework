@@ -4,10 +4,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-/**
- * Loads key-value pairs from testdata.properties into memory.
- * Used to dynamically configure test behavior.
- */
 public class ConfigReader {
     private static final Properties properties = new Properties();
 

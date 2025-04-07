@@ -4,14 +4,10 @@ import com.automation.seleniumwebform.base.BaseTest;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Captures screenshots (e.g., on test failure) and saves with timestamp.
- */
 public class ScreenshotUtil extends BaseTest {
 
     public static String captureScreenshot(String scenarioName) {

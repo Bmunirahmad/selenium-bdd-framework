@@ -8,14 +8,10 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.cucumber.java.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Global hooks to set up and tear down WebDriver,
- * initialize config, generate reports and handle screenshots.
- */
+
 public class Hooks extends BaseTest {
     private static final Logger logger = LoggerFactory.getLogger(Hooks.class);
     private static ExtentReports extent;
