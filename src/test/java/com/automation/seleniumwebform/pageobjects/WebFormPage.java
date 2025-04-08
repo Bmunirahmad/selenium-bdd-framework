@@ -6,12 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.automation.seleniumwebform.utils.ConfigReader;
-
 import java.io.File;
 
-/**
- * Page Object Model class for Selenium Web Form interactions.
- */
 public class WebFormPage {
 
     private WebDriver driver;
@@ -63,18 +59,11 @@ public class WebFormPage {
     @FindBy(name = "my-range")
     private WebElement rangeInput;
 
-
-
-
-
-    // === Constructor ===
     public WebFormPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
         waitHelper = new WaitHelper(driver);
     }
-
-    // === Actions ===
 
     public void fillForm() {
         waitHelper.waitForElementToBeVisible(textInput);

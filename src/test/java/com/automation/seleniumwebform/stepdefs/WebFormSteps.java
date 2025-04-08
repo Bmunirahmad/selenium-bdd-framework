@@ -6,12 +6,10 @@ import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-/**
- * Step definitions implementing behavior described in .feature file.
- */
+
 public class WebFormSteps {
     WebFormPage webFormPage;
-    WebDriver driver = BaseTest.getStaticDriver(); // ✅ Access driver statically
+    WebDriver driver = BaseTest.getStaticDriver();
 
     @Given("the user navigates to the Selenium Web Form page")
     public void setupPage() {
